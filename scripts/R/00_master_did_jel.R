@@ -12,6 +12,10 @@ renv::restore(prompt = FALSE)
 rm(list = ls())
 library(here)
 #-------------
+# Fix conflicts 
+library(conflicted)
+conflict_prefer("select", "dplyr")
+#-------------
 # Construct the data
 source(here::here('scripts/R/0_make_data.R'), echo = TRUE)
 #-------------
