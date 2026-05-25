@@ -1,301 +1,456 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p4 {margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    li.li3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
-    li.li8 {margin: 0.0px 0.0px 14.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    li.li9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; -webkit-text-stroke: #000000}
-    li.li10 {margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    li.li11 {margin: 0.0px 0.0px 14.9px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {-webkit-text-stroke: 0px #000000}
-    span.s3 {font: 13.0px Menlo; font-kerning: none}
-    span.s4 {font: 13.0px Menlo; -webkit-text-stroke: 0px #000000}
-    span.s5 {font: 14.0px Times; -webkit-text-stroke: 0px #000000}
-    span.s6 {font: 14.0px Times; font-kerning: none}
-    span.s7 {font-kerning: none; -webkit-text-stroke: 0px #000000}
-    span.s8 {font: 18.0px Times; -webkit-text-stroke: 0px #000000}
-    span.s9 {font: 18.0px Times; font-kerning: none}
-    table.t1 {border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000}
-    td.td1 {width: 156.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td2 {width: 49.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td3 {width: 75.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td4 {width: 176.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td5 {width: 159.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td6 {width: 31.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td7 {width: 169.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td8 {width: 147.7px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td9 {width: 42.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td10 {width: 131.5px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    td.td11 {width: 188.3px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000; padding: 6.0px 6.0px 6.0px 6.0px}
-    ol.ol1 {list-style-type: decimal}
-    ul.ul1 {list-style-type: circle}
-    ul.ul2 {list-style-type: disc}
-    ul.ul3 {list-style-type: square}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data and Code for Difference-in-Differences Designs: A Practitioner's Guide</title>
+  <meta name="description" content="Replication materials for Difference-in-Differences Designs: A Practitioner's Guide by Andrew Baker, Brantly Callaway, Scott Cunningham, Andrew Goodman-Bacon, and Pedro H. C. Sant'Anna.">
+  <link rel="canonical" href="https://psantanna.com/JEL-DiD/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Data and Code for Difference-in-Differences Designs: A Practitioner's Guide">
+  <meta property="og:description" content="Replication materials, R and Stata code, data, figures, tables, and an interactive code appendix for the JEL article.">
+  <meta property="og:url" content="https://psantanna.com/JEL-DiD/">
+  <meta property="og:image" content="https://psantanna.com/images/social-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Data and Code for Difference-in-Differences Designs: A Practitioner's Guide">
+  <meta name="twitter:description" content="Replication materials, R and Stata code, data, figures, tables, and an interactive code appendix for the JEL article.">
+  <meta name="twitter:image" content="https://psantanna.com/images/social-card.jpg">
+  <style>
+    :root {
+      --emory-blue: #002878;
+      --ink: #1f2933;
+      --muted: #5d6b7a;
+      --line: #d9e2ec;
+      --paper: #ffffff;
+      --soft: #f5f8fc;
+      --accent: #b8c7e6;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: linear-gradient(180deg, #f7faff 0%, #ffffff 320px);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--emory-blue);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .page {
+      width: min(calc(100% - 40px), var(--max-width));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 44px;
+      align-items: start;
+      padding: 42px 0 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--emory-blue);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      color: #111827;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 4.3vw, 3.2rem);
+      line-height: 1.08;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .title-mobile-break {
+      display: none;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .authors {
+      max-width: 780px;
+      margin: 18px 0 0;
+      color: #344054;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--paper);
+      color: var(--emory-blue);
+      font-size: 0.95rem;
+      font-weight: 650;
+      line-height: 1.2;
+    }
+
+    .button.primary {
+      border-color: var(--emory-blue);
+      background: var(--emory-blue);
+      color: #ffffff;
+    }
+
+    .button:hover,
+    .button:focus {
+      text-decoration: none;
+      border-color: var(--emory-blue);
+    }
+
+    .sidebox {
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 18px 48px rgba(0, 40, 120, 0.08);
+    }
+
+    .sidebox h2 {
+      margin: 0 0 14px;
+      color: #111827;
+      font-size: 0.82rem;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .quick-links {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .quick-links a {
+      display: block;
+      padding: 10px 0;
+      border-top: 1px solid var(--line);
+      font-weight: 650;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 44px;
+      padding-top: 34px;
+    }
+
+    section {
+      padding: 30px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:first-child {
+      padding-top: 0;
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: #111827;
+      font-size: 1.35rem;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      color: #111827;
+      font-size: 1.03rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 16px 1.3rem;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    code {
+      padding: 0.12rem 0.3rem;
+      border-radius: 4px;
+      background: #eef3fb;
+      color: #1a3568;
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 0.93em;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--emory-blue);
+    }
+
+    .note {
+      padding: 18px;
+      border-left: 4px solid var(--emory-blue);
+      background: var(--soft);
+      color: #344054;
+    }
+
+    .meta-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .meta-list strong {
+      display: block;
+      color: #111827;
+      font-size: 0.8rem;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 860px) {
+      .page {
+        width: 100%;
+        padding: 28px 14px 72px;
+      }
+
+      .hero,
+      main {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .hero {
+        padding-top: 24px;
+      }
+
+      h1 {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      .sidebox {
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 1.65rem;
+        line-height: 1.12;
+      }
+
+      .hero {
+        min-width: 0;
+      }
+
+      .hero > div,
+      main > div,
+      aside,
+      .subtitle,
+      .authors {
+        min-width: 0;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      .title-mobile-break {
+        display: block;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Data and Code for: Difference-in-Differences Designs: A Practitioner’s Guide</b><b></b></span></h1>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Authors</b><b></b></span></h2>
-<p class="p3"><span class="s1">Andrew Baker, Brantly Callaway, Scott Cunningham, Andrew Goodman-Bacon, and Pedro H. C. Sant’Anna</span></p>
-<p class="p3"><span class="s1">Contact: <i>andrew@goodman-bacon.com</i><i></i></span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Abstract</b><b></b></span></h2>
-<p class="p3"><span class="s1"><b>Abstract from the paper:</b> Difference-in-differences (DiD) is arguably the most popular quasi-experimental research design. Its canonical form, with two groups and two periods, is well-understood. However, empirical practices can be ad hoc when researchers go beyond that simple case. This article provides an organizing framework for discussing different types of DiD designs and their associated DiD estimators. It discusses covariates, weights, handling multiple periods, and staggered treatments. The organizational framework, however, applies to other extensions of DiD methods as well.</span></p>
-<p class="p2"><span class="s1"><b>Replication Instructions</b><b></b></span></p>
-<p class="p3"><span class="s1"><b>Overview:</b> To replicate the analysis and results, users have two options: (1) use R, or (2) use Stata. Both approaches will ultimately produce the same figures and tables. The simplest approach is to use one environment throughout, but advanced users could mix (for example, use R to rebuild data and Stata for analysis). We outline both methods below. In all cases, start by unpacking the replication archive and setting the working directory to the top-level folder containing this README.</span></p>
-<p class="p4"><span class="s1"><b>Option 1: Replication using R</b><b></b></span></p>
-<ol class="ol1">
-  <li class="li5"><span class="s2"></span><span class="s1">Install R (version 4.x). It will also be convenient to use RStudio.<span class="Apple-converted-space"> </span></span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">Open the provided </span><span class="s3">DiD_JEL.Rproj</span><span class="s1"> RStudio project, which will set your working directory to the replication package folder. Alternatively, set your R working directory manually to the folder containing the </span><span class="s3">scripts/</span><span class="s1"> and </span><span class="s3">data/</span><span class="s1"> directories.</span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">Open </span><span class="s3">scripts/R/00_master_did_jel.R </span><span class="s1">in R (or RStudio) and run it. This master script will:</span></li>
-  <ul class="ul1">
-    <li class="li5"><span class="s2"></span><span class="s1">Load required libraries. We use renv to create a fully reproducible package. In the master code it will call renv::restore() which will download and install the packages from the renv.lock file into the local environment.<span class="Apple-converted-space"> </span></span></li>
-    <li class="li5"><span class="s2"></span><span class="s1">Execute the code </span><span class="s3">0_make_data.R</span><span class="s1">, which will read in the raw data and produce the combined dataset </span><span class="s3">county_mortality_data.csv</span><span class="s1">. (This step will also attempt to fetch data from the Census API for poverty and income – an internet connection is required for that step. If offline, the script will use the included final data from the archive, which already contains those variables. You can do this by commenting out the code from the master file (line 16 of </span><span class="s3">scripts/R/00_master_did_jel.R</span><span class="s1">)</span></li>
-    <li class="li5"><span class="s2"></span><span class="s1">Execute the analysis scripts </span><span class="s3">1_Adoption_Table.R</span><span class="s1"> through </span><span class="s3">4_GxT.R</span><span class="s1"> in sequence. These will perform all calculations and generate intermediate results, figures, and tables. As they run, you will see output in the R console and figures may briefly display.</span></li>
-    <li class="li5"><span class="s2"></span><span class="s1">Execute </span><span class="s3">5_honestdid.R</span><span class="s1"> to run the sensitivity analysis and produce any additional outputs (e.g., adjusted estimates or plots for the appendix).</span></li>
-  </ul>
-  <li class="li5"><span class="s2"></span><span class="s1">Once </span><span class="s3">00_master_did_jel.R</span><span class="s1"> completes, check the </span><span class="s3">figures/</span><span class="s1"> and </span><span class="s3">tables/</span><span class="s1"> directories. They should now contain the replication results. You can open the PDF figures to compare with the paper’s figures, and open any table files (or the console output in R) to compare with the published tables. All numbers and graphs should match the article and its appendix.</span></li>
-</ol>
-<p class="p3"><span class="s1"><i>Note:</i> The R code is written to use relative paths via the </span><span class="s3">here</span><span class="s1"> package, so as long as the working directory is correctly set (by opening the RProj or using </span><span class="s3">setwd</span><span class="s1"> to the project root), no manual path edits are required. The entire R pipeline should run automatically. Total runtime in R is expected to be around 10 minutes (depending on your system).</span></p>
-<p class="p4"><span class="s1"><b>Option 2: Replication using Stata</b><b></b></span></p>
-<ol class="ol1">
-  <li class="li5"><span class="s2"></span><span class="s1">Install Stata (version 15 or higher recommended; the do-files were tested on Stata 17). Ensure you have an internet connection for the first run so that Stata can install any needed user-written commands.</span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">Start Stata and change the working directory to the replication package folder. For example, in Stata’s command window, type:<br>
-</span><span class="s3">cd "C:\path\to\Difference-in-Differences-replication"</span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">Open the file </span><span class="s3">scripts/Stata/00_stata_master_did_jel.do</span><span class="s1"> in Stata’s do-file editor. Edit the line near the top that defines the global </span><span class="s3">root</span><span class="s1"> directory: </span><span class="s3">global rootdir "your pathname here"<br>
-</span><span class="s1">Replace </span><span class="s3">"your pathname here"</span><span class="s1"> with the full path to the replication folder on your system (the folder containing the </span><span class="s3">data</span><span class="s1">, </span><span class="s3">scripts</span><span class="s1">, etc.). Save the changes.</span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">In Stata, run the master do-file. You can do this by clicking “Do” in the editor or by typing </span><span class="s3">do scripts/Stata/00_stata_master_did_jel.do</span><span class="s1"> in the Stata command prompt. The master script will then:</span></li>
-  <ul class="ul1">
-    <li class="li5"><span class="s2"></span><span class="s1">Install any missing Stata packages from SSC (you will see Stata connecting to net sites to install commands like </span><span class="s3">csdid</span><span class="s1">, </span><span class="s3">drdid</span><span class="s1">, etc.). This happens only once; subsequent runs will skip installations if the packages are already present.</span></li>
-    <li class="li5"><span class="s2"></span><span class="s1">Execute </span><span class="s3">0_stata_Make_data.do</span><span class="s1">, which will load the provided </span><span class="s3">data/county_mortality_data.csv</span><span class="s1"> and set up the analysis dataset in memory.</span></li>
-    <li class="li5"><span class="s2"></span><span class="s1">Execute the analysis scripts 1 through 5 in order. You will see output in the Stata Results window: for example, the adoption table being printed, regression results, and graph generation. The do-files will save graphs to </span><span class="s3">figures/</span><span class="s1"> (as PDF files) and tables to </span><span class="s3">tables/</span><span class="s1"> as they go.</span></li>
-  </ul>
-  <li class="li5"><span class="s2"></span><span class="s1">When the master script finishes, verify the outputs against the paper’s tables and figures for confirmation.</span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">Check the </span><span class="s3">figures/</span><span class="s1"> folder for newly created figure PDFs. Open them to ensure they correspond to the figures in the paper (titles, axes, and plotted values should match). For example, you should find figures illustrating the mortality trends for expansion vs. non-expansion states, event-study plots for multiple years, etc., as described in the paper.</span></li>
-  <li class="li5"><span class="s2"></span><span class="s1">Check the </span><span class="s3">tables/</span><span class="s1"> folder for any output tables. If LaTeX tables were saved (e.g., </span><span class="s3">.tex</span><span class="s1"> files), you can compile them or open them in a text editor to verify the numbers align with the published tables.</span></li>
-</ol>
-<p class="p3"><span class="s1"><i>Troubleshooting:</i> If Stata stops with an error, read the error message and refer to the corresponding do-file. Common issues might include not having write permission in the directory (ensure that Stata can create files in </span><span class="s3">figures/</span><span class="s1"> and </span><span class="s3">tables/</span><span class="s1">) or package installation problems (if a network issue prevented downloading a package, try installing it manually via </span><span class="s3">ssc install [pkg]</span><span class="s1"> and re-run). Make sure the </span><span class="s3">$rootdir</span><span class="s1"> path was set correctly; if it’s incorrect, Stata will not find the data or scripts. If replication still fails, one can fall back to using R, as the R code might be more self-contained for data assembly.</span></p>
-<p class="p3"><span class="s1"><b>Results Verification:</b> Both approaches should yield the same substantive results. Differences will be due either to the use of bootstrap standard errors or cosmetic details of software graphing functionality (ie. histograms), but these should be small. The figures and tables generated by the R code can be directly compared to the figures and tables in the published article’s main text and appendix.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Data Availability</b><b></b></span></h2>
-<p class="p3"><span class="s1">This replication package includes all data used in the study. All datasets are from public sources and are provided in the </span><span class="s3">data/</span><span class="s1"> directory of the archive. The authors certify that they have legitimate access to these data and permission to use them, and that they have the rights to redistribute the included data for replication purposes. Details on each data source are provided below. (All data are publicly available, so no special access or confidentiality restrictions apply.)</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Data Sources and Provenance</b><b></b></span></h3>
-<ul class="ul2">
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>CDC Mortality and Population Data:</b> County-level mortality counts and population figures for various subgroups were obtained from publicly available CDC sources. Files in </span><span class="s3">data/cdc/</span><span class="s1"> include </span><span class="s3">mortality.csv</span><span class="s1"> (total deaths of adults 20-64 by county-year) and population files broken down by demographic groups (</span><span class="s3">female_pop.csv</span><span class="s1">, </span><span class="s3">white_pop.csv</span><span class="s1">, </span><span class="s3">hispanic_pop.csv</span><span class="s1">, etc.). These data were originally sourced from the CDC WONDER database and are in the public domain.<span class="Apple-converted-space">  </span>Source = https://wonder.cdc.gov/deaths-by-underlying-cause.html.<span class="Apple-converted-space"> </span></span></li>
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>BLS Unemployment Data:</b> County-level unemployment rates and labor force data for years 2009–2019 were obtained from the U.S. Bureau of Labor Statistics Local Area Unemployment Statistics (LAU). The files </span><span class="s3">laucnty09.xlsx</span><span class="s1"> through </span><span class="s3">laucnty19.xlsx</span><span class="s1"> (located in </span><span class="s3">data/bls/</span><span class="s1">) contain annual county unemployment statistics for each year 2009–2019. These Excel files are directly from BLS (publicly available government data). Source = https://www.bls.gov/lau/tables.htm.</span></li>
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Medicaid Expansion Status:</b> The file </span><span class="s3">expansion_status.csv</span><span class="s1"> in </span><span class="s3">data/kff/</span><span class="s1"> was compiled from the Kaiser Family Foundation’s data on state Medicaid expansion decisions under the Affordable Care Act. It lists each U.S. state’s expansion status and the year of expansion (if applicable). This information is publicly available through KFF and included here for convenience. Source = https://www.kff.org/status-of-state-medicaid-expansion-decisions/.</span></li>
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Socioeconomic Covariates:</b> County-level poverty rates and median household incomes for the relevant years were retrieved from the U.S. Census Bureau (American Community Survey). These variables are incorporated into the final dataset. The replication code uses the Census API to obtain these measures; however, the final compiled dataset (described below) already contains these variables for each county-year. Source = https://www2.census.gov/programs-surveys/saipe/datasets/</span></li>
-</ul>
-<p class="p6"><span class="s1"></span><br></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Compiled Analysis Dataset</b><b></b></span></h3>
-<p class="p3"><span class="s1">The above sources were merged to create a single analysis dataset of county-level observations used in the paper’s empirical analysis. This compiled dataset is provided in two formats for convenience:</span></p>
-<ul class="ul2">
-  <li class="li5"><span class="s4"></span><span class="s3">data/county_mortality_data.csv</span><span class="s1"> – a CSV file containing the merged panel dataset of 3,143 U.S. counties over multiple years (2010–2019). It includes variables such as county identifiers, year, adult mortality counts, population (ages 20–64), mortality rates, demographic population shares, unemployment rate, poverty rate, median income, and an indicator of Medicaid expansion status with the year of expansion.</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">data/did_jel_aca_replication_data.dta</span><span class="s1"> – the same merged dataset in Stata </span><span class="s3">.dta</span><span class="s1"> format. This is provided for users replicating with Stata, to avoid any import issues. It contains the identical information as the CSV file above. (Note: In the scripts, the CSV version is used as input for the data construction step, and this Stata file is provided as a ready-to-use copy of the final data.)</span></li>
-</ul>
-<p class="p3"><span class="s1"><i>Rights and Licenses:</i> All data in this package are publicly available and either in the public domain or provided under terms that allow redistribution for research purposes. The authors have verified that including these data in the replication archive does not violate any usage agreements. If users reuse the data, please cite the original data sources (e.g., CDC, BLS, KFF) as appropriate. No sensitive or restricted data are used in this study.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Software and Computational Requirements</b><b></b></span></h2>
-<p class="p3"><span class="s1"><b>Supported Platforms:</b> The replication materials can be run on any modern Windows, macOS, or Linux system. The code and data are not platform-dependent. The analysis was originally run on a 64-bit machine with 64 GB RAM and an Intel Xeon 1.8GHz processor, but such high specifications are not strictly required. A typical desktop or laptop (e.g., 8–16 GB RAM, multi-core CPU) should be sufficient to reproduce the results, though runtime may vary.</span></p>
-<p class="p3"><span class="s1"><b>Software Required:</b> Two software environments are provided for replication:</span></p>
-<ul class="ul2">
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Stata:</b> The Stata replication code was tested on Stata 16 and 17. It should run on Stata 15 or higher, as it uses standard commands and user-written packages compatible with these versions. Stata is required if using the </span><span class="s3">.do</span><span class="s1"> files for replication.</span></li>
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>R:</b> The analysis can also be replicated in R (version 4.1 or higher recommended). An R Project file (</span><span class="s3">DiD_JEL.Rproj</span><span class="s1">) is included to facilitate using RStudio. The R scripts rely on several R packages (listed below).</span></li>
-</ul>
-<p class="p3"><span class="s1"><b>R Packages Needed:</b> To replicate in R, the following R packages (with the versions used in the original replication) are required:</span></p>
-<ul class="ul2">
-  <li class="li5"><span class="s4"></span><span class="s3">tidyverse</span><span class="s1"> (data manipulation and plotting; v2.0.0)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">readxl</span><span class="s1"> (reading Excel files; v1.4.5)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">here</span><span class="s1"> (for file paths, v1.0.2)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">kableExtra</span><span class="s1"> and </span><span class="s3">modelsummary</span><span class="s1"> (for formatting tables; v1.4.0 and v2.5.0)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">did</span><span class="s1"> (Difference-in-Differences estimation package by Callaway &amp; Sant’Anna, v2.3.0)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">HonestDiD</span><span class="s1"> (for robustness checks, v0.2.6)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">fixest</span><span class="s1"> (for fixed effects regressions, v0.13.2)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">ggthemes</span><span class="s1"> and </span><span class="s3">patchwork</span><span class="s1"> (for plotting themes and combining plots, v5.2.0 and v.1.3.2)</span></li>
-</ul>
-<p class="p3"><span class="s1">All these packages are available on CRAN or GitHub.<span class="Apple-converted-space"> </span></span></p>
-<p class="p3"><span class="s1"><b>Stata User-Written Packages:</b> The Stata do-files will automatically attempt to install required user-contributed commands (from SSC) if they are not already present. Specifically, the master do-file uses:</span></p>
-<ul class="ul2">
-  <li class="li5"><span class="s4"></span><span class="s3">csdid</span><span class="s1"> (Callaway and Sant’Anna’s staggered DID estimation command, v.1.81)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">drdid</span><span class="s1"> (Doubly-Robust DID commands by Sant’Anna et al., v1.91)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">honestdid</span><span class="s1"> (Honest DiD sensitivity analysis, by Rambachan &amp; Roth, wrapped for Stata)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">regsave</span><span class="s1"> and </span><span class="s3">estout</span><span class="s1"> (for saving regression results and outputting tables)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">coefplot</span><span class="s1"> and </span><span class="s3">grc1leg2</span><span class="s1"> (for plotting coefficients and combining graphs)</span></li>
-</ul>
-<p class="p3"><span class="s1">An active internet connection in Stata is required to install these on the fly. If internet access is not available, the user should install these packages beforehand or uncomment any provided alternative steps. Once installed, the do-files will run offline. No other proprietary tools are needed beyond Stata itself.</span></p>
-<p class="p3"><span class="s1"><b>Memory and Runtime:</b> The full replication (all analyses and generating all figures and tables) completes in approximately 10–15 minutes on a modern computer. Peak memory usage is moderate; a machine with at least 4 GB of free RAM is recommended. Most of the runtime is spent running estimations. There is no significant randomness in the code (any random number generation for, e.g., bootstrap confidence intervals uses set seeds), so results should be exactly reproducible across runs and platforms.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Structure of the Archive</b><b></b></span></h2>
-<p class="p3"><span class="s1">The replication package is organized into the following files and folders:</span></p>
-<ul class="ul2">
-  <li class="li5"><span class="s4"></span><span class="s3">README.html</span><span class="s1"> – <i>(this document)</i> A detailed guide to the replication package, including how to run the code and information on data and software.</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">LICENSE</span><span class="s1"> – License file for the code (MIT License). This covers the authors’ code in the repository. (Data sources are public domain or similarly open; see Data Availability above.)</span></li>
-  <li class="li5"><span class="s4"></span><span class="s3">DiD_JEL.Rproj</span><span class="s1"> – R Project file for easy use with RStudio. Opening this project will set the working directory to the replication package root, which helps the R scripts find the data and output folders automatically.</span></li>
-  <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Data Directory – </b></span><span class="s3"><b>data/</b></span><span class="s1">: Contains all datasets used or produced (poverty and median income read directly from census.gov in /scripts/R/0_data_processing.R)</span></li>
-  <ul class="ul1">
-    <li class="li5"><span class="s4"></span><span class="s3">data/bls/</span><span class="s1"> – raw unemployment data from BLS. Files </span><span class="s3">laucnty09.xlsx</span><span class="s1"> ... </span><span class="s3">laucnty19.xlsx</span><span class="s1"> are yearly spreadsheets of county unemployment and labor force data (for years 2009 through 2019 respectively).</span></li>
-    <li class="li5"><span class="s4"></span><span class="s3">data/cdc/</span><span class="s1"> – raw mortality and population data from CDC sources. This includes </span><span class="s3">mortality.csv</span><span class="s1"> (county-level deaths of age 20–64, by year), and population breakdowns by demographic group: </span><span class="s3">female_pop.csv</span><span class="s1">, </span><span class="s3">white_pop.csv</span><span class="s1">, </span><span class="s3">hispanic_pop.csv</span><span class="s1">, </span><span class="s3">total_pop.csv</span><span class="s1"> (total population aged 20–64). These were used to compute mortality rates and demographic shares.</span></li>
-    <li class="li5"><span class="s4"></span><span class="s3">data/kff/</span><span class="s1"> – contains </span><span class="s3">expansion_status.csv</span><span class="s1">, which lists each state’s Medicaid expansion status and year. Used to assign treatment (expansion) timing to each state’s counties.</span></li>
-    <li class="li5"><span class="s4"></span><span class="s3">data/county_mortality_data.csv</span><span class="s1"> – the merged analysis dataset (in CSV format) combining all of the above sources plus additional covariates (poverty rate, median income). Each row is a county-year observation. This is the main input data for analysis scripts.</span></li>
-    <li class="li5"><span class="s4"></span><span class="s3">data/did_jel_aca_replication_data.dta</span><span class="s1"> – the same merged dataset in Stata format. Provided for convenience to Stata users (so they do not need to manually import the CSV). The Stata code uses the CSV, but this file can be opened directly in Stata to inspect the data.</span></li>
- <li class="li5"><span class="s4"></span><span class="s1"> The following files are included in the archive under <code>data/</code>.</span>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Replication Materials</p>
+        <h1>Difference-in-Differences<br>Designs: A Practitioner's<br class="title-mobile-break"> Guide</h1>
+        <p class="subtitle">Data and code for the JEL article.</p>
+        <p class="authors">Andrew Baker, Brantly Callaway, Scott Cunningham,<br>Andrew Goodman-Bacon, and<br>Pedro H. C. Sant'Anna</p>
+        <nav class="actions" aria-label="Primary links">
+          <a class="button primary" href="markdown/R_Stata/Code_Appendix.html">Interactive code appendix</a>
+          <a class="button" href="https://github.com/pedrohcgs/JEL-DiD">GitHub repository</a>
+          <a class="button" href="https://psantanna.com/files/DiD_JEL.pdf">Paper PDF</a>
+          <a class="button" href="https://www.openicpsr.org/openicpsr/project/239070/view">AEA data archive</a>
+        </nav>
+      </div>
+      <aside class="sidebox" aria-label="Quick links">
+        <h2>Quick Access</h2>
+        <ul class="quick-links">
+          <li><a href="README.md">README</a></li>
+          <li><a href="scripts/R/00_master_did_jel.R">R master script</a></li>
+          <li><a href="scripts/Stata/00_stata_master_did_jel.do">Stata master script</a></li>
+          <li><a href="figures/">Figures</a></li>
+          <li><a href="tables/">Tables</a></li>
+        </ul>
+      </aside>
+    </header>
 
-<!-- ===== AEA README: DATA LIST (Generated) ===== -->
-<table border="1" cellpadding="6" cellspacing="0" style="font-size:12px; font-family:Times;">
-  <thead>
-    <tr>
-      <th>File name</th>
-      <th>Directory</th>
-      <th>Provided in archive?</th>
-      <th>Source</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>laucnty09.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty10.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty11.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty12.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty13.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty14.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty15.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty16.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty17.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty18.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
-    <tr><td>laucnty19.xlsx</td><td>data/bls</td><td>Yes</td><td>BLS LAU county unemployment (laucnty##.xlsx)</td><td>Original download; public data</td></tr>
+    <main>
+      <div>
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>Difference-in-differences (DiD) is arguably the most popular quasi-experimental research design. Its canonical form, with two groups and two periods, is well-understood. However, empirical practices can be ad hoc when researchers go beyond that simple case.</p>
+          <p>This replication package contains the data, R scripts, Stata do-files, generated figures, generated tables, and a self-contained interactive appendix for reproducing the empirical results in the article.</p>
+          <p class="note">The main landing page is this URL: <a href="https://psantanna.com/JEL-DiD/">https://psantanna.com/JEL-DiD/</a>. The interactive appendix remains available at <a href="markdown/R_Stata/Code_Appendix.html">markdown/R_Stata/Code_Appendix.html</a>.</p>
+        </section>
 
-    <tr><td>female_pop.csv</td><td>data/cdc</td><td>Yes</td><td>CDC WONDER / Bridged-race population</td><td>Original download; public data</td></tr>
-    <tr><td>hispanic_pop.csv</td><td>data/cdc</td><td>Yes</td><td>CDC WONDER / Bridged-race population</td><td>Original download; public data</td></tr>
-    <tr><td>white_pop.csv</td><td>data/cdc</td><td>Yes</td><td>CDC WONDER / Bridged-race population</td><td>Original download; public data</td></tr>
-    <tr><td>total_pop.csv</td><td>data/cdc</td><td>Yes</td><td>CDC WONDER / Population totals</td><td>Original download; public data</td></tr>
-    <tr><td>mortality.csv</td><td>data/cdc</td><td>Yes</td><td>CDC WONDER / Mortality</td><td>Original download; public data</td></tr>
-    <tr><td>poverty and median income </td><td>N/A</td><td>No</td><td>Census/ SAIPE </td><td>read from census.gov in 0_data_processing.R</td></tr>
-    <tr><td>expansion_status.csv</td><td>data/kff</td><td>Yes</td><td>KFF Medicaid Expansion Status</td><td>Original download; public data</td></tr>
+        <section id="replication">
+          <h2>Replication</h2>
+          <p>Users can reproduce the analysis in either R or Stata. Both workflows are organized around a master script that runs the complete analysis and writes outputs to the repository's <code>figures/</code> and <code>tables/</code> folders.</p>
 
-    <tr><td>county_mortality_data.csv</td><td>data</td><td>Yes</td><td>Constructed dataset</td><td>Built by scripts from CDC+BLS+KFF</td></tr>
-    <tr><td>did_jel_aca_replication_data.dta</td><td>data</td><td>Yes</td><td>Constructed dataset (Stata)</td><td>Analysis-ready panel</td></tr>
-  </tbody>
-</table>
-<!-- ===== /DATA LIST ===== -->
+          <div class="cards">
+            <article class="card">
+              <h3>R</h3>
+              <ol>
+                <li>Open <code>DiD_JEL.Rproj</code> in RStudio.</li>
+                <li>Run <code>scripts/R/00_master_did_jel.R</code>.</li>
+                <li>Check the generated files in <code>figures/</code> and <code>tables/</code>.</li>
+              </ol>
+            </article>
+            <article class="card">
+              <h3>Stata</h3>
+              <ol>
+                <li>Open <code>scripts/Stata/00_stata_master_did_jel.do</code>.</li>
+                <li>Set the <code>rootdir</code> path to this replication folder.</li>
+                <li>Run the master do-file and compare the generated outputs.</li>
+              </ol>
+            </article>
+          </div>
+        </section>
 
+        <section id="archive">
+          <h2>Archive Structure</h2>
+          <ul>
+            <li><code>data/</code>: public data sources and compiled analysis data.</li>
+            <li><code>scripts/R/</code>: R code for data construction, analysis, figures, and tables.</li>
+            <li><code>scripts/Stata/</code>: Stata do-files for the corresponding analysis workflow.</li>
+            <li><code>figures/</code>: generated figure files from the R and Stata workflows.</li>
+            <li><code>tables/</code>: generated table files from the R and Stata workflows.</li>
+            <li><code>markdown/R_Stata/</code>: Quarto source and HTML for the interactive code appendix.</li>
+          </ul>
+        </section>
 
+        <section id="data">
+          <h2>Data</h2>
+          <p>The analysis uses public data from the CDC, Bureau of Labor Statistics, Kaiser Family Foundation, and the U.S. Census Bureau. The compiled county-level analysis data are provided in CSV format, with the replication scripts documenting the construction and analysis steps.</p>
+          <p>The official AEA/openICPSR data archive is available at <a href="https://www.openicpsr.org/openicpsr/project/239070/view">openICPSR project 239070</a>.</p>
+        </section>
+      </div>
 
+      <aside>
+        <section>
+          <h2>Materials</h2>
+          <ul class="meta-list">
+            <li>
+              <strong>Interactive Appendix</strong>
+              <a href="markdown/R_Stata/Code_Appendix.html">Code for replication in R and Stata</a>
+            </li>
+            <li>
+              <strong>Repository</strong>
+              <a href="https://github.com/pedrohcgs/JEL-DiD">github.com/pedrohcgs/JEL-DiD</a>
+            </li>
+            <li>
+              <strong>Paper</strong>
+              <a href="https://psantanna.com/files/DiD_JEL.pdf">PDF</a> and <a href="https://arxiv.org/abs/2503.13323">arXiv</a>
+            </li>
+            <li>
+              <strong>Contact</strong>
+              <a href="https://psantanna.com/">psantanna.com</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </main>
 
-    <li class="li7"></li>
-    <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Scripts Directory – </b></span><span class="s3"><b>scripts/</b></span><span class="s1">: Contains all code to reproduce the results. Two subfolders are provided for the two software options:</span></li>
-    <ul class="ul1">
-      <li class="li5"><span class="s4"></span><span class="s3">scripts/R/</span><span class="s1"> – R scripts for replication. These are numbered in the order they should be run:</span></li>
-      <ul class="ul3">
-        <li class="li5"><span class="s4"></span><span class="s3">0_make_data.R</span><span class="s1"> – Reads the raw data (BLS, CDC, KFF) and constructs the merged dataset. It also retrieves the Census poverty and income data via API and adds those. The final combined dataset is written to </span><span class="s3">data/county_mortality_data.csv</span><span class="s1">.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">1_Adoption_Table&gt;R</span><span class="s1"> – Produces a summary table of Medicaid expansion adoption timing (e.g., how many states or counties expanded in 2014, 2015, etc., versus not at all). This corresponds to a descriptive table in the paper.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">2_2x2.R</span><span class="s1"> – Performs the basic 2x2 Difference-in-Differences analysis (two groups, two periods) using the example of Medicaid expansion vs. non-expansion pre- vs. post-2014. It generates results for the simplest DiD scenario.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">3_2XT.R</span><span class="s1"> – Extends the analysis to a 2 x T setting (two groups, multiple periods). This script examines multiple periods of data (pre- and post-treatment) for treated vs. control groups, producing dynamic event-study style figures.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">4_GxT.R</span><span class="s1"> – Generalizes to a G x T setting (multiple groups with staggered treatment timing across T periods). This script uses methods appropriate for staggered adoption (multiple treatment groups entering at different times) and produces the corresponding results (aggregate treatment effect estimates and/or figures). It leverages the “building block” approach described in the paper to compute aggregate effects from 2x2 comparisons.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">5_honestdid.R</span><span class="s1"> – Conducts robustness and sensitivity checks, specifically the “Honest DiD” bias-adjustment and sensitivity analysis (following the approach of Rambachan and Roth). Computes how sensitive the results are to deviations from the parallel trends assumption and may output results or plots for an appendix.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">00_master_did_jel.R</span><span class="s1"> – A master R script that sequentially runs all the above R scripts in the correct order. Running this one file will execute the entire analysis pipeline from data construction to final output. (Note: Before running, ensure the required R packages are installed as described above.)</span></li>
-      </ul>
-      <li class="li5"><span class="s4"></span><span class="s3">scripts/Stata/</span><span class="s1"> – Stata do-files for replication. The key files are:</span></li>
-      <ul class="ul3">
-        <li class="li5"><span class="s4"></span><span class="s3">00_stata_master_did_jel.do</span><span class="s1"> – Master do-file that sets up the environment and runs all analysis do-files. **Important:** This file contains a line to define the global path </span><span class="s3">$rootdir</span><span class="s1">. The user should edit this line to point to the folder where the replication files are located on their system (or alternatively, launch Stata in that directory and define </span><span class="s3">global rootdir</span><span class="s1"> accordingly). Once the path is set, running this master script will call all other scripts in order. It also installs any needed Stata packages (via SSC) at the beginning. The master script estimates that the full run takes about 11 minutes on a high-end machine (as noted in comments).</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">0_stata_Make_data.do</span><span class="s1"> – Constructs the merged dataset for analysis (similar to the R script 0_data_processing.R). It reads in the </span><span class="s3">county_mortality_data.csv</span><span class="s1"> provided in the data folder (which contains all needed variables) and performs any additional cleaning or variable transformations in Stata. The output is kept in memory for use by subsequent do-files (and could be saved as a Stata data file if needed).</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">1_stata_adoption_table.do</span><span class="s1"> – Replicates the generation of the adoption summary table using Stata. It produces counts of states/counties by expansion status and year, matching the results from the R script for Table 1 (Medicaid expansion timing breakdown).</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">2_stata_2x2.do</span><span class="s1"> – Runs the 2x2 DiD analysis in Stata, analogous to the R script. Computes the difference-in-differences estimate for the two-period, two-group case and stores or displays the results.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">3_stata_2xT.do</span><span class="s1"> – Runs the multiple-period (event study) analysis in Stata, computing period-by-period treatment effects or dynamic effects for the treated vs. control comparison, and aggregates them if needed. Results should match those from the R version.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">4_stata_GxT.do</span><span class="s1"> – Runs the staggered adoption (multiple group, multiple period) analysis in Stata. This uses the provided user-written commands (like </span><span class="s3">csdid</span><span class="s1"> or </span><span class="s3">drdid</span><span class="s1">) to estimate the proper aggregations of 2x2 comparisons across groups and time, reproducing the main empirical results in the paper.</span></li>
-        <li class="li5"><span class="s4"></span><span class="s3">5_stata_honestdid.do</span><span class="s1"> – Performs the Honest DiD sensitivity analysis in Stata, paralleling the R script. Uses the </span><span class="s3">honestdid</span><span class="s1"> package to calculate how robust the findings are to potential violations of the parallel trends assumption, and outputs the results (e.g., bias-adjusted estimates or confidence intervals).</span></li>
-      </ul>
-    </ul>
-    <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Output Directories – </b></span><span class="s3"><b>figures/</b></span><span class="s1"><b> and </b></span><span class="s3"><b>tables/</b></span><span class="s1">: These folders are placeholders for the results generated by the code.</span></li>
-    <ul class="ul1">
-      <li class="li5"><span class="s4"></span><span class="s3">figures/</span><span class="s1"> – After running the replication scripts, this will contain the figures (graphs) produced by the analysis, in PDF or PNG format. Each figure corresponds to one in the paper or appendix (e.g., event-study plots of mortality rates, etc.). The R scripts use </span><span class="s3">ggsave()</span><span class="s1"> to save figures here, and the Stata scripts also output graphs (using </span><span class="s3">graph export</span><span class="s1">) to this folder with similar names.</span></li>
-      <li class="li5"><span class="s4"></span><span class="s3">tables/</span><span class="s1"> – This will contain output tables (as LaTeX </span><span class="s3">.tex</span><span class="s1"> files, CSVs, or text) generated by the code, such as regression result tables or summary statistics tables. For example, the adoption summary table and regression tables are saved here. These files can be opened or compiled (if LaTeX) to verify that they match the tables in the published paper.</span></li>
-    </ul>
-    <li class="li3"><span class="s2"><i></i></span><span class="s1"><i>Note:</i> Initially, </span><span class="s3">figures/</span><span class="s1"> and </span><span class="s3">tables/</span><span class="s1"> are empty. They will be populated when the code is run. The names and formats of outputs are chosen to correspond with those referenced in the paper (for instance, </span><span class="s3">adoptions.tex</span><span class="s1"> or </span><span class="s3">Figure3.pdf</span><span class="s1">, etc.).<span class="Apple-converted-space"> </span></span></li>
-    <li class="li8"><span class="s5"><b></b></span><span class="s6"><b>List of Programs and their Outputs<br>
-</b></span><span class="s1">Each exhibit below lists the output file and the script (with the line where it is written/exported).<br>
-<br>
-<b>R outputs</b><b></b></span></li>
-
-<!-- ===== AEA README: PROGRAM-OUTPUT MAP (Generated) ===== -->
-<table border="1" cellpadding="6" cellspacing="0" style="font-size:12px; font-family:Times;">
-
-  <thead>
-    <tr><th>Type</th><th>Output file (relative path)</th><th>Generated by script</th><th>Line no.</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Table</td><td>tables/table1_R.tex</td><td>scripts/R/1_Adoption_Table.R</td><td>86</td></tr>
-    <tr><td>Table</td><td>tables/table2_R.tex</td><td>scripts/R/2_2x2.R</td><td>173</td></tr>
-    <tr><td>Table</td><td>tables/table3_R.tex</td><td>scripts/R/2_2x2.R</td><td>208</td></tr>
-    <tr><td>Table</td><td>tables/table4_R.tex</td><td>scripts/R/2_2x2.R</td><td>426</td></tr>
-    <tr><td>Table</td><td>tables/table5_R.tex</td><td>scripts/R/2_2x2.R</td><td>466</td></tr>
-    <tr><td>Table</td><td>tables/table6_R.tex</td><td>scripts/R/2_2x2.R</td><td>514</td></tr>
-    <tr><td>Table</td><td>tables/table7_R.tex</td><td>scripts/R/2_2x2.R</td><td>638</td></tr>
-
-    <tr><td>Figure</td><td>figures/figure1_R.pdf</td><td>scripts/R/2_2x2.R</td><td>673</td></tr>
-    <tr><td>Figure</td><td>figures/figure2_R.pdf</td><td>scripts/R/3_2XT.R</td><td>105</td></tr>
-    <tr><td>Figure</td><td>figures/figure3_R.pdf</td><td>scripts/R/3_2XT.R</td><td>199</td></tr>
-    <tr><td>Figure</td><td>figures/figure4_R.pdf</td><td>scripts/R/3_2XT.R</td><td>259</td></tr>
-    <tr><td>Figure</td><td>figures/figure5_R.pdf</td><td>scripts/R/4_GxT.R</td><td>100</td></tr>
-    <tr><td>Figure</td><td>figures/figure6_R.pdf</td><td>scripts/R/4_GxT.R</td><td>148</td></tr>
-    <tr><td>Figure</td><td>figures/figure7_R.pdf</td><td>scripts/R/4_GxT.R</td><td>173</td></tr>
-    <tr><td>Figure</td><td>figures/figure8_R.pdf</td><td>scripts/R/4_GxT.R</td><td>218</td></tr>
-    <tr><td>Figure</td><td>figures/figure9_R.pdf</td><td>scripts/R/4_GxT.R</td><td>280</td></tr>
-  </tbody>
-</table>
-
-<br>
-
-<b>Stata outputs</b><b></b></span></li>
-<table border="1" cellpadding="6" cellspacing="0" style="font-size:12px; font-family:Times;">
-  <thead>
-    <tr><th>Type</th><th>Output file (relative path)</th><th>Generated by script</th><th>Line no.</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Table</td><td>tables/table1_stata.tex</td><td>scripts/Stata/1_stata_adoption_table.do</td><td>146</td></tr>
-    <tr><td>Table</td><td>tables/table2_stata.tex</td><td>scripts/Stata/2_stata_2x2.do</td><td>93</td></tr>
-    <tr><td>Table</td><td>tables/table3_stata.tex</td><td>scripts/Stata/2_stata_2x2.do</td><td>212</td></tr>
-    <tr><td>Table</td><td>tables/table4_stata.tex</td><td>scripts/Stata/2_stata_2x2.do</td><td>477</td></tr>
-    <tr><td>Table</td><td>tables/table5_stata.tex</td><td>scripts/Stata/2_stata_2x2.do</td><td>614</td></tr>
-    <tr><td>Table</td><td>tables/table6_stata.tex</td><td>scripts/Stata/2_stata_2x2.do</td><td>688</td></tr>
-    <tr><td>Table</td><td>tables/table7_stata.tex</td><td>scripts/Stata/2_stata_2x2.do</td><td>805</td></tr>
-
-    <tr><td>Figure</td><td>figures/figure1_stata.pdf</td><td>scripts/Stata/2_stata_2x2.do</td><td>930</td></tr>
-    <tr><td>Figure</td><td>figures/figure2_stata.pdf</td><td>scripts/Stata/3_stata_2xT.do</td><td>57</td></tr>
-    <tr><td>Figure</td><td>figures/figure3_stata.pdf</td><td>scripts/Stata/3_stata_2xT.do</td><td>152</td></tr>
-    <tr><td>Figure</td><td>figures/figure4_stata.pdf</td><td>scripts/Stata/3_stata_2xT.do</td><td>277</td></tr>
-    <tr><td>Figure</td><td>figures/figure5_stata.pdf</td><td>scripts/Stata/4_stata_GxT.do</td><td>63</td></tr>
-    <tr><td>Figure</td><td>figures/figure6_stata.pdf</td><td>scripts/Stata/4_stata_GxT.do</td><td>194</td></tr>
-    <tr><td>Figure</td><td>figures/figure7_stata.pdf</td><td>scripts/Stata/4_stata_GxT.do</td><td>223</td></tr>
-    <tr><td>Figure</td><td>figures/figure8_stata.pdf</td><td>scripts/Stata/4_stata_GxT.do</td><td>320</td></tr>
-    <tr><td>Figure</td><td>figures/figure9_stata.pdf</td><td>scripts/Stata/4_stata_GxT.do</td><td>423</td></tr>
-  </tbody>
-</table>
-<!-- ===== /PROGRAM-OUTPUT MAP ===== -->
-
-    <li class="li7"></li>
-    <li class="li5"><span class="s2"><b></b></span><span class="s1"><b>Markdown Documentation – </b></span><span class="s3"><b>markdown/</b></span><span class="s1">: This folder contains supplementary documentation in Quarto/Markdown format (and rendered HTML) for the code appendix:</span></li>
-    <ul class="ul1">
-      <li class="li5"><span class="s4"></span><span class="s3">markdown/Code_Appendix.qmd</span><span class="s1"> and </span><span class="s3">Code_Appendix.html</span><span class="s1"> – An appendix documenting the R and Stata code.</span></li>
-    </ul>
-    <li class="li3"><span class="s2"></span><span class="s1">These markdown files serve as a readable “code appendix” and do not need to be executed by replicators.</span></li>
-    <li class="li5"><span class="s4"></span><span class="s3">.gitignore</span><span class="s1"> and </span><span class="s3">.DS_Store</span><span class="s1"> – Standard housekeeping files (the former for git version control, the latter are incidental Mac system files). They have no bearing on replication and can be ignored.</span></li>
-  </ul>
-  <li class="li11"><span class="s8"><b></b></span><span class="s9"><b>Licenses and Permissions</b><br>
-</span><span class="s1"><b>Code License:</b> The authors have released the code in this replication package under the MIT License (see the </span><span class="s3">LICENSE</span><span class="s1"> file for full terms). This means that users are free to use, modify, and distribute the code, provided proper attribution is given. In short, the code is open-source. If you reuse substantial portions of the code, please cite the paper and give credit to the authors.<br>
-<b>Data Usage:</b> All data included are from public sources as noted. Government datasets (CDC, BLS, Census) are in the public domain and free to use. The Kaiser Family Foundation data on expansion status is publicly reported information. By including these files, we are redistributing them for replication purposes. To the best of our knowledge, this redistribution is allowed. Users should also cite the original data sources in any new work. No proprietary or confidential data are included, so no additional data licenses are required.<br>
-<b>Authorizations:</b> We reaffirm that we have permission to share all materials in this archive. If there are any questions about data permissions or if any data provider has concerns, please contact the authors (see the email above) or the AEA Data Editor’s office.<br>
-</span><span class="s9"><b>Acknowledgments</b><br>
-</span><span class="s1">We thank the American Economic Association Data Editor and staff for their guidance on preparing this replication package. We also thank the providers of the public data used in this study – specifically the CDC, BLS, Census Bureau, and Kaiser Family Foundation – for making their data readily accessible. Their efforts in data collection and dissemination made this research possible.<br>
-The authors are grateful to colleagues and seminar participants who provided feedback on earlier versions of the paper and its companion code. Additionally, we acknowledge the contributors of the open-source software and packages utilized (including R and Stata communities, and the developers of the </span><span class="s3">did</span><span class="s1">, </span><span class="s3">csdid</span><span class="s1">, and related packages). Their tools greatly facilitated our analysis.<br>
-Any errors in the replication code or documentation are the sole responsibility of the authors. Please report any issues or questions about the replication package to the contact email provided, and we will be happy to assist.</span></li>
-</ul>
+    <footer>
+      <p>Replication materials for "Difference-in-Differences Designs: A Practitioner's Guide."</p>
+    </footer>
+  </div>
 </body>
 </html>
